@@ -1,6 +1,6 @@
 package ru.ssau.tk.way.practice2.types;
 
-public class Test {
+public class FirstTest {
     public static void main(String[] args) {
         Person first = new Person();
         first.setFirstName("Luke");
