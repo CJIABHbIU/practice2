@@ -1,10 +1,28 @@
 package ru.ssau.tk.way.practice2.types;
 
 public class Person {
-    private String firstName ;
+    private String firstName;
     private String lastName;
     private int passportid;
-    
+
+    public Person() {
+    }
+
+    public Person(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    public Person(String firstName, String lastName, int passportid) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.passportid = passportid;
+    }
+
+    public Person(int passportid) {
+        this.passportid = passportid;
+    }
+
     public String getFirstName() {
         return firstName;
     }
