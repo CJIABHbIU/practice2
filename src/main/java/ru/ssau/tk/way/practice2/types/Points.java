@@ -36,4 +36,12 @@ public class Points {
     public static Point inverse(Point point) {
         return new Point(1 / point.x, 1 / point.y, 1 / point.z);
     }
+
+    public static double scalarProduct(Point firstPoint, Point secondPoint){
+        return firstPoint.x* secondPoint.x+ firstPoint.y* secondPoint.y+ firstPoint.z* secondPoint.z;
+    }
+
+    public static Point vectorProduct(Point firstPoint, Point secondPoint){
+        return new Point(firstPoint.y*secondPoint.z- firstPoint.z*secondPoint.y, firstPoint.z*secondPoint.x- firstPoint.x*secondPoint.z, firstPoint.x*secondPoint.y-secondPoint.x* firstPoint.y );
+    }
 }
