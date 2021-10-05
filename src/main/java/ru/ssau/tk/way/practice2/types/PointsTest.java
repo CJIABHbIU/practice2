@@ -10,5 +10,11 @@ public class PointsTest {
         System.out.println(subtract(first, second).y);
         System.out.println(multiply(first, second).z);
         System.out.println(divide(first, second).x);
+        second=enlarge(25, first);
+        System.out.println(Points.length(second));
+        second = vectorProduct(first, second);
+        first=opposite(first);
+        first = inverse(first);
+        System.out.println(scalarProduct(first, second));
     }
 }
