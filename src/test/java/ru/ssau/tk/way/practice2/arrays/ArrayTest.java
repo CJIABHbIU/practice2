@@ -45,4 +45,24 @@ public class ArrayTest {
         Assert.assertEquals(arr.arr7(1, -8, 16), new double[]{4}, 0.05);
         Assert.assertEquals(arr.arr7(1, 1, 17), new double[]{}, 0.05);
     }
+
+    @Test
+    public void testArr8() {
+        assertEquals(arr.arr8(7), new int[] {1,2,4,5,7,8,10});
+    }
+
+    @Test
+    public void testArr9() {
+        assertEquals(arr.arr9(5, 10, 5), new int[]{5, 15, 25, 35, 45});
+    }
+
+    @Test
+    public void testArr10() {
+        assertEquals(arr.arr10(5, 10, 0.5),new double[]{10, 20, 40, 80, 160});
+    }
+
+    @Test
+    public void testArr11() {
+        assertEquals(arr.arr11(36), new int[]{1, 2, 3, 4, 6, 9, 12, 18, 36});
+    }
 }

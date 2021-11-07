@@ -71,4 +71,51 @@ public class Array {
         arr[1] = (-b-Math.sqrt(b*b-4*a*c))/(2*a);
         return arr;
     }
+
+    public int[] arr8(int a){
+        int k=1;
+        arr = new int[a];
+        for (i=0;i<a; i++){
+            if ((i+k)%3==0){
+                k = k+1;
+            }
+            arr[i]=i+k;
+        }
+        return arr;
+    }
+
+    public int[] arr9(int a, int delta, int first){
+        arr = new int[a];
+        for(i=0; i<a; i++){
+            arr[i] = first+i*delta;
+        }
+        return arr;
+    }
+
+    public double[] arr10(int a, int first, double q){
+        double[] arr = new double[a];
+        arr[0] = first;
+        for(i=1; i<a; i++){
+            arr[i] = arr[i-1]/q;
+        }
+        return arr;
+    }
+
+    public int[] arr11(int x){
+        int c = 0;
+        for(i=1;i<=x;i++){
+            if(x%i==0){
+                c++;
+            }
+        }
+        arr = new int[c];
+        c=0;
+        for(i=1;i<=x;i++){
+            if(x%i==0){
+                arr[c] = i;
+                c++;
+            }
+        }
+        return arr;
+    }
 }
