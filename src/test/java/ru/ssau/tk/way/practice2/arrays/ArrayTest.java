@@ -3,6 +3,8 @@ package ru.ssau.tk.way.practice2.arrays;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.ArrayList;
+
 import static org.testng.Assert.*;
 
 public class ArrayTest {
@@ -64,5 +66,11 @@ public class ArrayTest {
     @Test
     public void testArr11() {
         assertEquals(arr.arr11(36), new int[]{1, 2, 3, 4, 6, 9, 12, 18, 36});
+    }
+
+    @Test
+    public void testArr12() {
+        assertEquals(arr.arr12(5), new Integer[] {2, 3, 5});
+        assertEquals(arr.arr12(10), new Integer[]{2, 3, 5, 7});
     }
 }
