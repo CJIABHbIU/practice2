@@ -137,4 +137,17 @@ public class Array {
         }
         return arr.toArray(new Integer[0]);
     }
+
+    public int[] arr13(int n){
+        arr = new int[2*n-1];
+        for (i=1;i<2*n;i++){
+            if(i>n){
+                arr[i-1] = 2*n-i;
+            }
+            else {
+                arr[i-1] = i;
+            }
+        }
+        return arr;
+    }
 }
