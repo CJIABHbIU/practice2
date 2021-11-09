@@ -9,6 +9,7 @@ import static org.testng.Assert.*;
 
 public class ArrayTest {
     Array arr = new Array();
+    int[] a = new int[]{1, 2, -3};
     @Test
     public void testArr() {
 
@@ -78,5 +79,32 @@ public class ArrayTest {
     public void testArr13() {
         assertEquals(arr.arr13(4), new int[]{1, 2, 3, 4, 3, 2, 1});
         assertEquals(arr.arr13(1), new int[]{1});
+    }
+
+    @Test
+    public void testArr14() {
+        arr.arr14(a);
+        assertEquals(a, new int[]{-1, -2, 3});
+    }
+
+    @Test
+    public void testArr15() {
+        assertFalse(arr.arr15(a, -1));
+        assertFalse(arr.arr15(a, 3));
+        assertTrue(arr.arr15(a, 1));
+    }
+
+    @Test
+    public void testArr16() {
+        Integer[] a = new Integer[]{1, 3, null};
+        Integer[] b = new Integer[]{1,2,3};
+        assertTrue(arr.arr16(a));
+        assertFalse(arr.arr16(b));
+    }
+
+    @Test
+    public void testArr17(){
+        int[] a = new int[]{2, 66, 3, 0};
+        assertEquals(arr.arr17(a), 2);
     }
 }

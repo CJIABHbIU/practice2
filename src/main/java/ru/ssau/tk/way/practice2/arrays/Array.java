@@ -150,4 +150,41 @@ public class Array {
         }
         return arr;
     }
+
+    public void arr14(int[] a){
+        for(i=0;i<a.length;i++){
+            a[i]=-a[i];
+        }
+    }
+
+    public boolean arr15(int[] a, int k){
+        for(i=0; i<a.length; i++){
+            if(a[i]==k){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean arr16(Integer[] a){
+        for(i=0; i<a.length;i++){
+            if(a[i]==null){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public int arr17(int[] a){
+        int c=0;
+        for(i=0; i<a.length; i++){
+            if(a[i]==0){
+                c = c-1;
+            }
+            if(a[i]%2==0){
+                c++;
+            }
+        }
+        return c;
+    }
 }
