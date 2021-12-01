@@ -185,4 +185,42 @@ public class Array {
         }
         return c;
     }
+
+    public Comparable<Integer> arr18(int[] a) {
+        int c = 0;
+        if (a.length == 0) {
+            return null;
+        }
+        for (i = 0; i < a.length; i++) {
+            if (c < a[i]) {
+                c = a[i];
+            }
+        }
+        return c;
+    }
+
+    public int arr19(int[] a) {
+        int s = 0;
+        for (i = 0; i < a.length; i = i + 2) {
+            s = s + a[i];
+        }
+        return s;
+    }
+
+    public boolean arr20(int[] a) {
+        int cFirst = 0;
+        int cLast = 0;
+        for (i = 0; i < a.length; i++) {
+            if (a[i] % a[0] == 0) {
+                cFirst++;
+            }
+            if (a[i] % a[a.length - 1] == 0) {
+                cLast++;
+            }
+        }
+        if (cFirst > cLast) {
+            return true;
+        }
+        return false;
+    }
 }

@@ -106,4 +106,28 @@ public class ArrayTest {
         int[] a = new int[]{2, 66, 3, 0};
         assertEquals(arr.arr17(a), 2);
     }
+
+    @Test
+    public void testArr18() {
+        int[] a = new int[]{2, 4, 60, 30};
+        int[] b = new int[]{};
+        assertEquals(arr.arr18(a), 60);
+        assertNull(arr.arr18(b));
+    }
+
+    @Test
+    public void testArr19() {
+        int[] a = new int[]{2, 4, 60, 30};
+        int[] b = new int[]{1, 4, 50, 60, 70};
+        assertEquals(arr.arr19(a), 62);
+        assertEquals(arr.arr19(b), 121);
+    }
+
+    @Test
+    public void testArr20() {
+        int[] a = new int[]{2, 4, 60, 30};
+        int[] b = new int[]{3, 4, 50, 60, 1};
+        assertTrue(arr.arr20(a));
+        assertFalse(arr.arr20(b));
+    }
 }
