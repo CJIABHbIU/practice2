@@ -12,6 +12,7 @@ public class Tasks {
             return human.toString();
         }
 
+
         public static char[] arrayOfCharactersByIndex(String[] array, int n) {
             char[] newArray = new char[array.length];
             for (int i = 0; i < newArray.length; ++i) {
