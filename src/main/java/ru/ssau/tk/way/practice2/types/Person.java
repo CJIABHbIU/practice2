@@ -1,5 +1,7 @@
 package ru.ssau.tk.way.practice2.types;
 
+
+
 public class Person {
     private String firstName;
     private String lastName;

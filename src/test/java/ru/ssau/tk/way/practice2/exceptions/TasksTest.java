@@ -12,8 +12,6 @@ public class TasksTest {
 
     @Test
     public void testDataOutput() {
-        Person human = new Person("Jane", "Austen", 234567);
-        assertEquals(dataOutput(human), "Jane Austen");
 
         assertThrows(NullPointerException.class, () -> dataOutput(null));
     }
